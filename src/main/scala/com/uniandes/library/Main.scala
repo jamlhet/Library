@@ -5,4 +5,6 @@ package com.uniandes.library
   */
 object Main extends App{
   println("Hola mundo")
+  val hello = MyEmptySet[Int]
+  hello.insert(1)
 }
