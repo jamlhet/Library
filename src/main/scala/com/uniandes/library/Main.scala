@@ -5,6 +5,10 @@ package com.uniandes.library
   */
 object Main extends App{
   println("Hola mundo")
-  val hello = MyEmptySet[Int]
-  hello.insert(1)
+  val left = new MyEmptySet[Int]
+  val right = new MyEmptySet[Int]
+  val first = new MyNonEmptySet[Int](1,left,right)
+  println(s"Contains ${first.contains(1)}")
+  first.insert(2)
+  println(s"Contains ${first.contains(2)}")
 }
